@@ -94,6 +94,9 @@ body{
 .hero-foot li{
     background-color:transparent;
 }
+.hero-foot ul{
+    text-align: center;
+}
 .hero-foot .container{
     position: relative;
     top: 15vh !important;
@@ -101,4 +104,9 @@ body{
 .hero-foot a{
     text-decoration: none;
     color:black;
+}
+
+.hero-foot .made-by{
+    position: relative;
+    bottom: 5px;
 }
