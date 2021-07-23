@@ -1,0 +1,104 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Noto Sans', Arial, sans-serif;
+    background-color: #212529;
+    transition: background-color 1s ease;
+}
+
+.hero img{
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 480px) {
+    .hero img {
+        width: 300px;
+        align-items: center;
+    }
+    .hero h1,p {
+        text-align: center;
+    }
+
+    .hero .hero-im{
+        margin-top: 0px !important;
+    }
+    .hero .hero-text{
+        margin-top: 25px !important;
+    }
+}
+.scroll-more{
+    background-image: linear-gradient(to right, #4e555c,#6c757d,#b3b6b9,#ebedef);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    background-size: 300%;
+    background-position: -100%;
+
+    animation: animatedText 1s infinite alternate-reverse;
+}
+
+@keyframes animatedText{
+    from{
+        background-position: 0%;
+    }
+    to{
+        background-position: 100%;
+    }
+}
+
+.experiences .card{
+    background-color: transparent;
+    border:0px;
+} 
+
+.experiences .card img{
+    border-radius: calc(.25rem - 1px);
+}
+
+.experiences .card .card-text{
+    color: white;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 480px) {
+    .experiences .card .card-text{
+        text-align: center;
+    }
+}
+
+.card{
+    top: 0px;
+    transition: top ease 0.5s;
+}
+.card:hover {
+    top: -20px;
+}
+
+/* colours */
+.color-dark {
+    background-color: #212529;
+}
+.color-grey {
+    background-color: #2c2f33;
+}
+.color-light {
+    background-color: #ebe5e5;
+}
+.hero-foot{
+    height:100vh;
+}
+.hero-foot li{
+    background-color:transparent;
+}
+.hero-foot .container{
+    position: relative;
+    top: 15vh !important;
+}
+.hero-foot a{
+    text-decoration: none;
+    color:black;
+}
